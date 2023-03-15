@@ -18,12 +18,12 @@ sudo apt install libpcl-dev
 
 - pcl_ros package
 ```
-sudo apt install ros-noestic-pcl-ros
+sudo apt install ros-noetic-pcl-ros
 ```
 
 - pcl_conversions package
 ```
-sudo apt install ros-noestic-pcl-conversions
+sudo apt install ros-noetic-pcl-conversions
 ```
 
 ### Demo
@@ -81,7 +81,8 @@ rosbag play ${path_to_the_bag}
 ```
 
 ## Docker
-Here we're providing a docker image to encapsulate all dependencies and the bag so you can run the bag nad merge both lidars data
+Here we're providing a docker image to encapsulate all dependencies and the bag so you can run the bag and merge both lidars data
+
 `Note:` docker image can't run lidars view right now but you can listen to any topic outside the docker image by running the docker image with `--net=host`
 
 To run the demo with docker you can use the following steps:
@@ -127,4 +128,4 @@ rosrun combine-lidars MergerNode
 rosbag play catkin_ws/lidar.bag
 ```
 
-- optionally, you can run the viewers node
+- optionally, you can run the viewers nodes
