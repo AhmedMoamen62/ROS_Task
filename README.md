@@ -47,7 +47,7 @@ source /${workspace_dir}/devel/setup.bash
 roscore
 ```
 
-now you will need to run 3 viewers to view each point cloud\
+now you will need to run 3 viewers to view each point cloud <br/>
 
 `Note:` you will need to zoom out to fit the point cloud
 
@@ -82,7 +82,7 @@ rosbag play ${path_to_the_bag}
 ```
 
 ## Docker
-Here we're providing a docker image to encapsulate all dependencies and the bag so you can run the bag and merge both lidars data\
+Here we're providing a docker image to encapsulate all dependencies and the bag so you can run the bag and merge both lidars data <br/>
 
 `Note:` docker image can't run lidars view right now but you can listen to any topic outside the docker image by running the docker image with `--net=host`
 
