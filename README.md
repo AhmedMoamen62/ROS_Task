@@ -87,24 +87,44 @@ Here we're providing a docker image to encapsulate all dependencies and the bag 
 To run the demo with docker you can use the following steps:
 
 - pull the image
-`docker pull ahmedmoamen62/combine-lidars`
+
+```
+docker pull ahmedmoamen62/combine-lidars
+```
 
 - run the image
-`docker run -it --net=host combine-lidars`
+
+```
+docker run -it --net=host combine-lidars
+```
 
 - run the master node inside the container
-`roscore`
+
+```
+roscore
+```
 
 - open new terminal for the same running container so first you need to open a new terminal then run the following command
-`docker ps`
+
+```
+docker ps
+```
 
 - read the container id `${CONTAINER_ID}` then run the following command
-`docker exec -it ${CONTAINER_ID} bash`
+
+```
+docker exec -it ${CONTAINER_ID} bash
+```
 
 - run the merger node
-`rosrun combine-lidars MergerNode`
+
+```
+rosrun combine-lidars MergerNode
+```
 
 - do the same steps to open new terminal for the same running container then run the following command to play the bag
-`rosbag play catkin_ws/lidar.bag`
+```
+rosbag play catkin_ws/lidar.bag
+```
 
 - optionally, you can run the viewers node
